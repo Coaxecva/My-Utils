@@ -18,7 +18,6 @@ for refs in samfile.references:
 			for pileupread in pileupcolumn.pileups:
 				print '\tbase in read %s = %s' % (pileupread.alignment.qname, pileupread.alignment.seq[pileupread.qpos])
 	else:
-
 		aligned = 0
 		for pileupcolumn in samfile.pileup(refs, 0, samfile.lengths[c]+100):
 			aligned = aligned + 1
