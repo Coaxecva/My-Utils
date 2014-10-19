@@ -26,11 +26,13 @@ while i<n:
 
 	info2 = f2.readline()
 	name2 = info2.split(" ")
-	reads.add(name1[0][1:])
+	reads.add(name2[0][1:])
 	#print(name2[0][1:])
 	read2 = f2.readline()
 	opt2 = f2.readline()
 	qual2 = f2.readline()
+
+#print(reads)
 
 while True:
 	content3 = f3.readline()
@@ -42,8 +44,11 @@ while True:
 		f2_1.write(content3)
 
 	name3 = content3.split("\t")
+	#print(name3[0])
 	if name3[0] in reads:
 		f2_1.write(content3)
+		#print(name3[0])
+		#print(content3)
 
 f2_1.close()
 print("Done.")
