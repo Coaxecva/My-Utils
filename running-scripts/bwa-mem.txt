@@ -1,0 +1,1 @@
+./bwa mem ~/100genomes/AE017198.fasta ~/100genomes/reads/AE017198-25_1.fq ~/100genomes/reads/AE017198-25_2.fq > ~/100genomes/aligment/AE017198-25.bwa.sam &
