@@ -4,3 +4,20 @@ awk 'FNR==1{print ""}1' *.txt > finalfile.txt
 
 sed 's/read.*[/]//' read.txt > read1.txt
 sed 's/1:.*//' sample_01_1.fasta
+
+
+http://goo.gl/94zr4b
+http://goo.gl/9AvoTS
+http://goo.gl/b0vh3g
+http://goo.gl/OEjbPi
+http://goo.gl/PnLajH
+http://goo.gl/9EIc7h
+http://goo.gl/3yI1Kh
+http://goo.gl/eU2Uiz
+http://goo.gl/hFMO05
+http://goo.gl/7afBeM
+http://goo.gl/Wzb1LR
+http://goo.gl/1U0q2k
+http://goo.gl/WhcGrb
+http://goo.gl/Cuh8Ke
+http://goo.gl/B9zAd3
