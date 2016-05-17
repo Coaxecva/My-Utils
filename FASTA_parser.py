@@ -1,4 +1,6 @@
 ## parse7.py
+# http://www.dalkescientific.com/writings/NBN/parsing.html
+
 class FastaRecord(object):
     def __init__(self, title, sequence):
         self.title = title
