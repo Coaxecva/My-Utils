@@ -2,7 +2,8 @@
 
 awk 'FNR==1{print ""}1' *.txt > finalfile.txt
 
-sed 's/read.*[/]//' read.txt > read1.txt
+sed 's/read.*[/]//' sample_01_1.fasta
+sed 's/;mate:.*//' sample_01_1.fasta
 sed 's/1:.*//' sample_01_1.fasta
 
 
