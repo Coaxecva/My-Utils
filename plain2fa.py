@@ -30,13 +30,15 @@ if __name__ == '__main__':
 	for f in get_filepaths(sys.argv[1]):
 		if mimetypes.guess_type(f)[0] == 'text/plain':
 			#print(f)
-			f = open(sys.argv[1])
+			init = open(f)
+			print ("Opening the file: " + f)
+			target = open(f[:-3]+"fq", 'w')
+			i = 0
+			while True:
+				i += 1
+				read = f.readline()
+				if read == '':
+					break
+				print(">" + str(i))
+				print(read.strip())
 
-	#i = 0
-	#while True:
-	#	i += 1
-	#	read = f.readline()
-	#	if read == '':
-	#		break
-	#	print(">" + str(i))
-	#	print(read.strip())
