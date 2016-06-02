@@ -32,7 +32,7 @@ if __name__ == '__main__':
 			#print(f)
 			init = open(f)
 			print ("Opening the file: " + f)
-			target = open(f[:-3]+"fq", 'w')
+			target = open(f[:-3]+"fa", 'w')
 			i = 0
 			while True:
 				i += 1
@@ -45,4 +45,4 @@ if __name__ == '__main__':
 				target.write("\n")
 			target.close()
 			init.close()
-
+			os.system("perl fasta_to_fastq.pl " + f[:-3]+"fa >" + f[:-3]+"fq")
