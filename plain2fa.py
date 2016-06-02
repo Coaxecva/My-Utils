@@ -36,9 +36,13 @@ if __name__ == '__main__':
 			i = 0
 			while True:
 				i += 1
-				read = f.readline()
+				read = init.readline()
 				if read == '':
 					break
-				print(">" + str(i))
-				print(read.strip())
+				target.write(">" + str(i))
+				target.write("\n")
+				target.write(read.strip())
+				target.write("\n")
+			target.close()
+			init.close()
 
