@@ -32,7 +32,7 @@ if __name__ == '__main__':
 		os.system(Cushaw2_path+ref_path+"GRCh37_"+read[:-4]+".fasta -f "+read.strip()+" -o "+read[:-4]+".Cushaw2.sam")
 		
 		print(Gassst_path+ref_path+"GRCh37_"+read[:-4]+".fasta -i "+read[:-4]+".fa -o "+read[:-4]+".Gassst -p 90 -h 1 && ~/quang/Gassst_v1.28/gassst_to_sam "+read[:-4]+".Gassst "+read[:-4]+".Gassst.sam")
-		os.system(Gassst+ref_path+"GRCh37_"+read[:-4]+".fasta -i "+read[:-4]+"fa -o "+read[:-4]+".Gassst -p 90 -h 1 && ~/quang/Gassst_v1.28/gassst_to_sam "+read[:-4]+".Gassst "+read[:-4]+".Gassst.sam")
+		os.system(Gassst_path+ref_path+"GRCh37_"+read[:-4]+".fasta -i "+read[:-4]+"fa -o "+read[:-4]+".Gassst -p 90 -h 1 && ~/quang/Gassst_v1.28/gassst_to_sam "+read[:-4]+".Gassst "+read[:-4]+".Gassst.sam")
 		
 		print(Razers3_path+read[:-4]+".Razers3.sam "+ref_path+"GRCh37_"+read[:-4]+".fasta "+read.strip())
 		os.system(Razers3_path+read[:-4]+".Razers3.sam "+ref_path+"GRCh37_"+read[:-4]+".fasta "+read.strip())
