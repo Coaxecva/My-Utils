@@ -26,7 +26,7 @@ if __name__ == '__main__':
 		os.system(SHRiMp_path+read.strip()+" "+ref_path+"GRCh37_"+read[:-4]+".fasta > "+read[:-4]+".SHRiMP.sam &")
 
 		print(Bowtie2_path+ref_path+"GRCh37_"+read[:-4]+"-bowtie2 "+read.strip()+" -S "+read[:-4]+".Bowtie2.sam")
-		os.system(Bowtie2_path+ref_path+"GRCh37_"+read[:-4]+"-bowtie2 "+read+" > "+read[:-4]+".Bowtie2.sam &")
+		os.system(Bowtie2_path+ref_path+"GRCh37_"+read[:-4]+"-bowtie2 "+read.strip()+" -S "+read[:-4]+".Bowtie2.sam")
 		
 		print(Cushaw2_path+ref_path+"GRCh37_"+read[:-4]+".fasta -f "+read.strip()+" -o "+read[:-4]+".Cushaw2.sam")
 		os.system(Cushaw2_path+ref_path+"GRCh37_"+read[:-4]+".fasta -f "+read.strip()+" -o "+read[:-4]+".Cushaw2.sam &")
