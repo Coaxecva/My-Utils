@@ -22,3 +22,5 @@ http://goo.gl/1U0q2k
 http://goo.gl/WhcGrb
 http://goo.gl/Cuh8Ke
 http://goo.gl/B9zAd3
+
+https://ycl6.gitbooks.io/rna-seq-data-analysis/content/index.html
