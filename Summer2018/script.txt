@@ -1,4 +1,9 @@
-##sc1
+# key gen rsa
+ssh-keygen -t rsa -b 4096
+ls -lrt
+cat .ssh/id_rsa.pub 
+
+# sc1
 mkdir -p $HOME/Desktop/sc1
 sudo umount $HOME/Desktop/sc1
 mkdir -p $HOME/Desktop/sc1
@@ -9,6 +14,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 ssh lb046dev.eth.rsshpc1.sc1.roche.com
 
+# qsub
 qsub -N aligners_study -q all.q -l h_vmem=8G build.sh
 qsub -N try -l h_vmem=1G -q all.q -cwd -pe smp 1 -b y 'hostname; pwd; date'
 
@@ -21,6 +27,7 @@ qstat
 less try.o5008345 
 less try.e5008345 
 
+# tmux
 module load tmux
 tmux new-session -t main
 tmux ls
