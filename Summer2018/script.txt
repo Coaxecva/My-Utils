@@ -5,4 +5,15 @@ mkdir -p $HOME/Desktop/sc1
 sudo sshfs -o follow_symlinks,allow_other,defer_permissions,IdentityFile=$HOME/.ssh/id_rsa tranq6@lb022dev.eth.rsshpc1.sc1.roche.com:/home/tranq6 $HOME/Desktop/sc1
 
 ssh lb046dev.eth.rsshpc1.sc1.roche.com
+
 qsub -N aligners_study -q all.q -l h_vmem=8G build.sh
+qsub -N try -l h_vmem=1G -q all.q -cwd -pe smp 1 -b y 'hostname; pwd; date'
+
+qsub -N try -l h_vmem=1G -q all.q -cwd -pe smp 1 -b y ./tran_summer_2018/aligner_study/run.sh 
+qstat
+qstat -f -j 5008345
+qstat -f -j 5008345 | less
+ls -lrt
+qstat
+less try.o5008345 
+less try.e5008345 
