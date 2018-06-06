@@ -4,6 +4,9 @@ sudo umount $HOME/Desktop/sc1
 mkdir -p $HOME/Desktop/sc1
 sudo sshfs -o follow_symlinks,allow_other,defer_permissions,IdentityFile=$HOME/.ssh/id_rsa tranq6@lb022dev.eth.rsshpc1.sc1.roche.com:/home/tranq6 $HOME/Desktop/sc1
 
+# Current script DIR
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 ssh lb046dev.eth.rsshpc1.sc1.roche.com
 
 qsub -N aligners_study -q all.q -l h_vmem=8G build.sh
