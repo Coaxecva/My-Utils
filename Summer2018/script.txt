@@ -32,3 +32,7 @@ module load tmux
 tmux new-session -t main
 tmux ls
 tmux attach -t main
+
+
+Bioinformatics Research and Early Development
+Roche Sequencing Solutions
