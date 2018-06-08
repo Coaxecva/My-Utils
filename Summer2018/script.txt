@@ -40,8 +40,14 @@ MINICONDA/bin/bwa index -p tmp/TAIR10_chr_all.fas gen_data/TAIR10_chr_all.fas
 ${BWA} ${BWA_OPT} ${IDX} ${FASTQ} | ${SAMTOOLS} view -Shu - | ${SAMTOOLS} sort -o ${BAM}
 ${SAMTOOLS} index ${BAM}
 
+# Human genome on SC1
 /home/mohiyudm/bfx-red/projects/seqc2/references/hg38/reference.fasta
+# Find file names and direct path
 find LCL5 -name "*.subreads.bam" | xargs readlink -f
+
+# Li Tai Fang's help
+/sc1/groups/bfx-red/data/datainsights/projects/NT44/Rawdata/alienTrimmed/GRCh38/HC/logs/akt.sh
+https://github.com/Illumina/akt
 
 Bioinformatics Research and Early Development
 Roche Sequencing Solutions
