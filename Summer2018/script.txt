@@ -33,6 +33,8 @@ tmux new-session -t main
 tmux ls
 tmux attach -t main
 
+/home/mohiyudm/bfx-red/projects/seqc2/references/hg38/reference.fasta
+find LCL5 -name "*.subreads.bam" | xargs readlink -f
 
 Bioinformatics Research and Early Development
 Roche Sequencing Solutions
