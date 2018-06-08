@@ -1,3 +1,7 @@
+# reset terminal after displaying a binary file
+Hit Control + C a couple of times (Ctrl+C)
+Type the command reset and hit return
+
 # key gen rsa
 ssh-keygen -t rsa -b 4096
 ls -lrt
