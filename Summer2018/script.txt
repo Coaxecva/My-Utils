@@ -33,6 +33,13 @@ tmux new-session -t main
 tmux ls
 tmux attach -t main
 
+# BWA INDEX prefix
+MINICONDA/bin/bwa index -p tmp/TAIR10_chr_all.fas gen_data/TAIR10_chr_all.fas
+
+# BWA
+${BWA} ${BWA_OPT} ${IDX} ${FASTQ} | ${SAMTOOLS} view -Shu - | ${SAMTOOLS} sort -o ${BAM}
+${SAMTOOLS} index ${BAM}
+
 /home/mohiyudm/bfx-red/projects/seqc2/references/hg38/reference.fasta
 find LCL5 -name "*.subreads.bam" | xargs readlink -f
 
