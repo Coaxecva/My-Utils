@@ -1,0 +1,2 @@
+# Samtools tricks
+https://wikis.utexas.edu/display/CoreNGSTools/SAM+format+and+samtools
