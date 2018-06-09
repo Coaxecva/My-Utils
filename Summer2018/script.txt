@@ -56,7 +56,10 @@ ${SAMTOOLS} index ${BAM}
 # Find file names and direct path
 find LCL5 -name "*.subreads.bam" | xargs readlink -f
 
-# Li Tai Fang's help
+# Space of all files
+du -sh *
+
+# Li Tai Fang's catching eye figs
 /sc1/groups/bfx-red/data/datainsights/projects/NT44/Rawdata/alienTrimmed/GRCh38/HC/logs/akt.sh
 https://github.com/Illumina/akt
 
