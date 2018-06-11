@@ -1,3 +1,7 @@
+# qstat
+qstat -u '*' | less -S
+qsub -N bolt -l h_vmem=8GB -q all.q -cwd -pe smp ${NUM_THREADS} -b y "${BWA} ${BWA_OPT} ${BWA_IDX} ${FASTQ} | ${SAMTOOLS} view -Shu - | ${SAMTOOLS} sort -o ${BWA_BAM}; ${SAMTOOLS} index ${BWA_BAM}"
+
 # reset terminal after displaying a binary file
 Hit Control + C a couple of times (Ctrl+C)
 Type the command reset and hit return
