@@ -1,3 +1,12 @@
+# change *.fastq to *.bam.fastq
+echo "Processing in the folder..." $1
+for file in $1/*.fastq
+do
+	echo "mv " "$file" "${file%.fastq}.bam.fastq"
+	mv "$file" "${file%.fastq}.bam.fastq"
+done
+
+
 # qstat
 qstat -u '*' | less -S
 qsub -N bolt -l h_vmem=8GB -q all.q -cwd -pe smp ${NUM_THREADS} -b y "${BWA} ${BWA_OPT} ${BWA_IDX} ${FASTQ} | ${SAMTOOLS} view -Shu - | ${SAMTOOLS} sort -o ${BWA_BAM}; ${SAMTOOLS} index ${BWA_BAM}"
