@@ -55,7 +55,10 @@ less try.e5008345
 module load tmux
 tmux new-session -t main
 tmux ls
+#attach
 tmux attach -t main
+#detach
+Ctrl+ b :detach  
 
 # BWA INDEX prefix
 MINICONDA/bin/bwa index -p tmp/TAIR10_chr_all.fas gen_data/TAIR10_chr_all.fas
