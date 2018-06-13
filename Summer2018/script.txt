@@ -6,6 +6,9 @@ do
 	mv "$file" "${file%.fastq}.bam.fastq"
 done
 
+# qdel
+# all your jobs on cluster
+qstat | cut -d. -f1 | sed "s;   \(.*\) 0;qdel \1;" | bash
 
 # qstat
 qstat -u '*' | less -S
