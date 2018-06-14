@@ -1,3 +1,5 @@
+https://media.readthedocs.org/pdf/pysam/latest/pysam.pdf
+
 # change *.fastq to *.bam.fastq
 echo "Processing in the folder..." $1
 for file in $1/*.fastq
