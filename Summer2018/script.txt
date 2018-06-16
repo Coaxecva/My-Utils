@@ -1,4 +1,7 @@
+#pysam specs
 https://media.readthedocs.org/pdf/pysam/latest/pysam.pdf
+#flag
+https://broadinstitute.github.io/picard/explain-flags.html
 
 # change *.fastq to *.bam.fastq
 echo "Processing in the folder..." $1
