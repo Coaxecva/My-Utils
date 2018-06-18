@@ -1,3 +1,9 @@
+# number of read mapped
+# single read
+samtools view -F 0x904 -c file.sorted.bam
+# paired end reads
+samtools view -F 0x4 foo.sorted.bam | cut -f 1 | sort | uniq | wc -l
+
 #pysam specs
 https://media.readthedocs.org/pdf/pysam/latest/pysam.pdf
 #flag
