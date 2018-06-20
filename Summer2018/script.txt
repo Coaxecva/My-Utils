@@ -1,3 +1,9 @@
+# 2017 / April / Metagenomics
+https://github.com/dib-lab/2017-dibsi-metagenomics
+
+#
+https://github.com/t413/SinglePaged
+
 # number of read mapped
 # single read
 samtools view -F 0x904 -c file.sorted.bam
