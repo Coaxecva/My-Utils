@@ -1,7 +1,12 @@
+# bash [] vs. [[]]
+http://mywiki.wooledge.org/BashFAQ/031
+
+Basically mapped portion should be (readlength - clipped portion) readlength
+
 # 2017 / April / Metagenomics
 https://github.com/dib-lab/2017-dibsi-metagenomics
 
-#
+# single webpages
 https://github.com/t413/SinglePaged
 
 # number of read mapped
@@ -99,5 +104,6 @@ du -sh *
 /sc1/groups/bfx-red/data/datainsights/projects/NT44/Rawdata/alienTrimmed/GRCh38/HC/logs/akt.sh
 https://github.com/Illumina/akt
 
+# BRED
 Bioinformatics Research and Early Development
 Roche Sequencing Solutions
