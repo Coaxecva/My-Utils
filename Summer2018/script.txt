@@ -1,3 +1,6 @@
+# thesis reference:
+https://hal.archives-ouvertes.fr/tel-01484198v3/document
+
 # bash [] vs. [[]]
 http://mywiki.wooledge.org/BashFAQ/031
 
