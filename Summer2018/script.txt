@@ -1,3 +1,22 @@
+#string manipulate python
+https://stackoverflow.com/questions/19926089/python-equivalent-of-java-stringbuffer
+
+#MAPQ understanding
+http://www.acgt.me/blog/2014/12/16/understanding-mapq-scores-in-sam-files-does-37-42
+
+#DaveTang
+https://github.com/davetang
+
+# modify on string buffer
+# create buffer large enough to hold your segments of aligned sequences
+char_arr = np.empty(shape=(1024*1024), dtype='|S1')
+# do some changes on the buffer
+char_arr[0:4] = 'atgc'
+char_arr[4:8] = 'nnnn'
+char_arr[8:10] = 'aa'
+# convert relevant part of buffer to a string 
+seq_str = char_arr[0:10].tostring()
+
 # thesis reference:
 https://hal.archives-ouvertes.fr/tel-01484198v3/document
 
