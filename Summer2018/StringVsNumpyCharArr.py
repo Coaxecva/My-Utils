@@ -33,19 +33,37 @@ def ListCompString():
     out_str = ''.join('num' for num in range(loop_count))
     return out_str
 
-def NumpyCharArr():
-    char_arr = np.empty(shape=(1024*1024), dtype='|S1')
+char_arr = np.empty(shape=(1024*1024), dtype='|S1')
+def NumpyCharArr1():
     idx=0
     for num in range(loop_count):
-        char_arr[idx:idx+len('num')] = 'num'
+        char_arr[idx:idx+len('num')] = [x for x in 'num']
         idx+=len('num')
     return char_arr[0:idx-len('num')].tostring().decode('utf-8')
 
-loop_count = 8000
+def NumpyCharArr():
+    char_arr1 = np.empty(shape=(1024*1024), dtype='|S1')
+    idx=0
+    for num in range(loop_count):
+        char_arr1[idx:idx+len('num')] = 'num'
+        idx+=len('num')
+    return char_arr1[0:idx-len('num')].tostring().decode('utf-8')
+
+def NumpyArry():
+    out_str = np.chararray(shape=(1024*1024))
+    idx=0
+    for num in range(loop_count):
+        char_arr[idx:idx+len('num')] = [x for x in 'num']
+        idx+=len('num')
+    return out_str.tostring()
+
+loop_count = 80000
 print (sys.version)
 #
-print ('String=', timeit.timeit(String, number=10))
-print ('ListChar=', timeit.timeit(ListChar, number=10))
-print ('ListCompListChar=', timeit.timeit(ListCompListChar, number=10))
-print ('ListCompString=', timeit.timeit(ListCompString, number=10))
-print ('NumpyCharArr=', timeit.timeit(NumpyCharArr, number=10))
+print ('String=', timeit.timeit(String, number=100))
+print ('ListChar=', timeit.timeit(ListChar, number=100))
+print ('ListCompListChar=', timeit.timeit(ListCompListChar, number=100))
+print ('ListCompString=', timeit.timeit(ListCompString, number=100))
+print ('NumpyCharArr=', timeit.timeit(NumpyCharArr, number=100))
+print ('NumpyCharArr1=', timeit.timeit(NumpyCharArr1, number=100))
+print ('NumpyArry=', timeit.timeit(NumpyArry, number=100))
