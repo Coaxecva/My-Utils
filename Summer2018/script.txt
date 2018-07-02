@@ -1,3 +1,15 @@
+%pylab inline
+
+#ShellCheck
+https://github.com/koalaman/shellcheck
+declare -a readonly samples=(LCL5  LCL6  LCL7  LCL8)
+
+#argparse
+parser = argparse.ArgumentParser(description="ComputeIdentityPortion", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+parser.add_argument('--feature', dest='feature', action='store_true')
+parser.add_argument('--no-feature', dest='feature', action='store_false')
+parser.set_defaults(feature=True)
+
 #string manipulate python
 https://stackoverflow.com/questions/19926089/python-equivalent-of-java-stringbuffer
 
