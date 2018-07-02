@@ -1,5 +1,8 @@
 %pylab inline
 
+# Dict comprehension
+https://stackoverflow.com/questions/1747817/create-a-dictionary-with-list-comprehension-in-python
+
 #ShellCheck
 https://github.com/koalaman/shellcheck
 declare -a readonly samples=(LCL5  LCL6  LCL7  LCL8)
