@@ -1,5 +1,8 @@
 %pylab inline
 
+https://www.python.org/dev/peps/pep-0008/
+https://github.com/google/styleguide/blob/gh-pages/pyguide.md
+
 # Dict comprehension
 https://stackoverflow.com/questions/1747817/create-a-dictionary-with-list-comprehension-in-python
 
