@@ -1,0 +1,35 @@
+LR.bam.alignment.txt:m54152_170504_225546/35389969/13291_13351 --backward: 0
+LR.bam.alignment.txt-----------------AACATACTTGTCATTTCATT------------------------
+LR.bam.alignment.txt-aaaggcttttcacatcAACATACTTGTCATTTCATTtacacaaaaccagaatgaggaaaa
+
+LR.bam.alignment.txt:m54152_170504_225546/35389969/13291_13351 --backward: 0
+LR.bam.alignment.txt-------------CATCAACATACTTGTCATTT----------------------------
+LR.bam.alignment.txt-aaaggcttttcaCATCAACATACTTGTCATTTcatttacacaaaaccagaatgaggaaaa
+
+LR.bam.alignment.txt:m54152_170504_225546/35389969/13291_13351 --backward: 0
+LR.bam.alignment.txt--------TTTCACATCAACATACTTGTCA-------------------------------
+LR.bam.alignment.txt-aaaggctTTTCACATCAACATACTTGTCAtttcatttacacaaaaccagaatgaggaaaa
+############################################################################################
+LR.bam.alignment.txt:m54152_170504_225546/35061994/31242_31306 --backward: 0
+LR.bam.alignment.txt-----CTAGGTTTTCATTTACTTT-----------------------------------------
+LR.bam.alignment.txt-tttgCTAGGTTTTCATTTACTTTactgtggatttagtggtaggggctcctacgcgacgattcag
+--
+LR.bam.alignment.txt:m54152_170504_225546/35061994/31242_31306 --backward: 0
+LR.bam.alignment.txt------------------------------------CACAGTAAAGTAAATGAAA----------
+LR.bam.alignment.txt-ctgaatcgtcgcgtaggagcccctaccactaaatcCACAGTAAAGTAAATGAAAacctagcaaa
+--
+LR.bam.alignment.txt:m54152_170504_225546/35061994/31242_31306 --backward: 0
+LR.bam.alignment.txt------------------------------------------AAAGTAAATGAAAACCTAG----
+LR.bam.alignment.txt-ctgaatcgtcgcgtaggagcccctaccactaaatccacagtAAAGTAAATGAAAACCTAGcaaa
+--
+LR.bam.alignment.txt:m54152_170504_225546/35061994/31242_31306 --backward: 0
+LR.bam.alignment.txt------------------------------------------AAACTAAATGAAAACCTAGCA--
+LR.bam.alignment.txt-ctgaatcgtcgcgtaggagcccctaccactaaatccacagtAAAGTAAATGAAAACCTAGCAaa
+############################################################################################
+1381 --backward: 0
+**tcca*ttccattccattccattgcattccattccattccattccggatgattccattccattgcattccattccattccattcccctg*cactcgggttgattccattccattccattccattacattgcgttccattccat***tccattccattc----------------------------------------------------
+GCTCCACTTCCA*TGCATTCC****CATTCCATTCTATTCCATTCCGGATGCTTCCATT*CA*TGCATTCCATTGCATTCCATTCCCCTGTTACTCGGGTTGATCCCATTCCATTGCATTCC*CTCCATTCCATTCCATTCCGTCCGTCCATTCCATTCcttccattctgttcaggttaattccattccatttcccttcctccattccatt
+
+1381 --backward: 0
+*tcca*ttccattccattccattaaattccattccattccattccggatgattccattccattgaattccattgcattccattcccctg*cacttgggttgattccattccattccatt****acattcctttcttttccat***tccattccattccattccattct*ttc*gtcttaattccattcca*ttctattccattccattccatt
+CTCCACTTCCA*TGCATTCC****CATTCCATTCTATTCCATTCCGGATGCTTCCATT*CA*TGCATTCCATTGCATTCCATTCCCCTGTTACTCGGGTTGATCCCATTCCATTGCATTCCCTCCATTCCATTCCATTCCGTCCGTCCATTCCATTCC*TTCCATTCTGTTCAG*GTTAATTCCATTCCATTTCCCTTCC**TCCATTCCATT
