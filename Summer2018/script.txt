@@ -1,7 +1,11 @@
+# software available on sc1
+module avail
+
 :stuck_out_tongue_closed_eyes: :neckbeard: :alien:
 https://gist.github.com/rxaviers/7360908
 
 %pylab inline
+plt.xticks(rotation='vertical')
 
 https://www.python.org/dev/peps/pep-0008/
 https://github.com/google/styleguide/blob/gh-pages/pyguide.md
