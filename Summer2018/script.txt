@@ -1,10 +1,13 @@
 head -n 5000000 /sc1/groups/bfx-red/users/tranq6/STR/STR_report.csv | ./repeat_stats.py | awk 'length($1)==3' | grep -v seq | sort -g | grep -v 'n' | grep -v 'N'
 
-# fatal error: stddef.h: No such file or directory
+### leetcode
+https://buptwc.github.io/
+
+### fatal error: stddef.h: No such file or directory
 export CC=`which gcc`
 export CXX=`which g++`
 
-# software available on sc1
+### software available on sc1
 module avail
 
 :stuck_out_tongue_closed_eyes: :neckbeard: :alien:
@@ -16,39 +19,39 @@ plt.xticks(rotation='vertical')
 https://www.python.org/dev/peps/pep-0008/
 https://github.com/google/styleguide/blob/gh-pages/pyguide.md
 
-# Dict comprehension
+### Dict comprehension
 https://stackoverflow.com/questions/1747817/create-a-dictionary-with-list-comprehension-in-python
 
-#ShellCheck
+### ShellCheck
 https://github.com/koalaman/shellcheck
 declare -a readonly samples=(LCL5  LCL6  LCL7  LCL8)
 
-#argparse
+### argparse
 parser = argparse.ArgumentParser(description="ComputeIdentityPortion", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument('--feature', dest='feature', action='store_true')
 parser.add_argument('--no-feature', dest='feature', action='store_false')
 parser.set_defaults(feature=True)
 
-#string manipulate python
+### string manipulate python
 https://stackoverflow.com/questions/19926089/python-equivalent-of-java-stringbuffer
 
-#MAPQ understanding
+### MAPQ understanding
 http://www.acgt.me/blog/2014/12/16/understanding-mapq-scores-in-sam-files-does-37-42
 
-#DaveTang
+### DaveTang
 https://github.com/davetang
 
-# modify on string buffer
-# create buffer large enough to hold your segments of aligned sequences
+### modify on string buffer
+### create buffer large enough to hold your segments of aligned sequences
 char_arr = np.empty(shape=(1024*1024), dtype='|S1')
-# do some changes on the buffer
+### do some changes on the buffer
 char_arr[0:4] = 'atgc'
 char_arr[4:8] = 'nnnn'
 char_arr[8:10] = 'aa'
-# convert relevant part of buffer to a string 
+### convert relevant part of buffer to a string 
 seq_str = char_arr[0:10].tostring()
 
-# thesis reference:
+### thesis reference:
 https://hal.archives-ouvertes.fr/tel-01484198v3/document
 
 # bash [] vs. [[]]
