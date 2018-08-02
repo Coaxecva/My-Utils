@@ -1,3 +1,14 @@
+head -n12 m54152_170430_204839.subreads.bam.fastq | paste - - - - | awk '{print length($2)}'
+6709
+8025
+9637
+head -n12 m54152_170430_204839.subreads.bam.fastq | paste - - - - | awk '{print $1, length($2)}'
+@m54152_170430_204839/5046460/0_6709 6709
+@m54152_170430_204839/5046498/0_8025 8025
+@m54152_170430_204839/5046498/8070_17707 9637
+cat  m54152_170430_204839.subreads.bam.fastq | paste - - - - | awk '{print $1, length($2)}' | wc -l
+101567
+
 head -n 5000000 /sc1/groups/bfx-red/users/tranq6/STR/STR_report.csv | ./repeat_stats.py | awk 'length($1)==3' | grep -v seq | sort -g | grep -v 'n' | grep -v 'N'
 
 ### leetcode
