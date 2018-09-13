@@ -2,3 +2,4 @@ http://www.ub.edu/stat/docencia/bioinformatica/microarrays/ADM/slides/A_Tutorial
 http://www.entomoljournal.com/archives/2017/vol5issue1/PartF/4-5-195-327.pdf
 http://rrphysiology.ru/en/journal/article/796/
 http://dspace.bsu.edu.ru/bitstream/123456789/17505/1/Quan_Evalution_16.pdf
+https://unglueit-files.s3.amazonaws.com/ebf/05db7df4f31840f0a873d6ea14dcc28d.pdf
