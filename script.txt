@@ -34,3 +34,4 @@ https://ycl6.gitbooks.io/rna-seq-data-analysis/content/index.html
 
 
 https://public.dhe.ibm.com/common/ssi/ecm/xi/en/xim12354usen/XIM12354USEN.PDF
+https://docs.google.com/spreadsheets/d/1-PGWc0FMp3qggsIG3407d3gxLUzAv13X1Oa_u-EoqBs/edit?usp=sharing
