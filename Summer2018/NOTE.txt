@@ -189,6 +189,8 @@ du -sh *
 /sc1/groups/bfx-red/data/datainsights/projects/NT44/Rawdata/alienTrimmed/GRCh38/HC/logs/akt.sh
 https://github.com/Illumina/akt
 
+samtools depth *bamfile*  |  awk '{sum+=$3; sumsq+=$3*$3} END { print "Average = ",sum/NR; print "Stdev = ",sqrt(sumsq/NR - (sum/NR)**2)}'
+
 # BRED
 Bioinformatics Research and Early Development
 Roche Sequencing Solutions
