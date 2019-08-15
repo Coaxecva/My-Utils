@@ -29,6 +29,9 @@ cat  m54152_170430_204839.subreads.bam.fastq | paste - - - - | awk '{print $1, l
 
 head -n 5000000 /sc1/groups/bfx-red/users/tranq6/STR/STR_report.csv | ./repeat_stats.py | awk 'length($1)==3' | grep -v seq | sort -g | grep -v 'n' | grep -v 'N'
 
+fq to fa
+cat test.fastq | paste - - - - | sed 's/^@/>/g'| cut -f1-2 | tr '\t' '\n'
+
 ### leetcode
 https://buptwc.github.io/
 
