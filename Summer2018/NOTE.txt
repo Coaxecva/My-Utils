@@ -194,6 +194,10 @@ https://github.com/Illumina/akt
 
 samtools depth *bamfile*  |  awk '{sum+=$3; sumsq+=$3*$3} END { print "Average = ",sum/NR; print "Stdev = ",sqrt(sumsq/NR - (sum/NR)**2)}'
 
+# split fastq to 2 files
+cat original.fastq | awk 'NR%8==1 || NR%8==2 || NR%8==3 || NR%8==4' > first4s.fastq
+cat original.fastq | awk 'NR%8==5 || NR%8==6 || NR%8==7 || NR%8==0' > second4s.fastq
+
 grep "EXCISED REGION.S" ~/ChineseTrio/PacBio_XXX.AGE.report -A 2 | grep "first.*seq.*1[0-9][0-9][0-9][0-9] nucs"
 
 # BRED
