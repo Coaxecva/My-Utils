@@ -103,6 +103,9 @@ samtools view -F 0x904 -c file.sorted.bam
 # paired end reads
 samtools view -F 0x4 foo.sorted.bam | cut -f 1 | sort | uniq | wc -l
 
+# fastq to fasta
+cat test.fastq | paste - - - - | sed 's/^@/>/g'| cut -f1-2 | tr '\t' '\n' > test.fa
+
 #pysam specs
 https://media.readthedocs.org/pdf/pysam/latest/pysam.pdf
 #flag
