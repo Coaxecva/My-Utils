@@ -210,6 +210,8 @@ cat original.fastq | awk 'NR%8==5 || NR%8==6 || NR%8==7 || NR%8==0' > second4s.f
 
 grep "EXCISED REGION.S" ~/ChineseTrio/PacBio_XXX.AGE.report -A 2 | grep "first.*seq.*1[0-9][0-9][0-9][0-9] nucs"
 
+http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/working/20160622_genome_mask_GRCh38/ ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/supporting/accessible_genome_masks/StrictMask/ 
+
 # BRED
 Bioinformatics Research and Early Development
 Roche Sequencing Solutions
