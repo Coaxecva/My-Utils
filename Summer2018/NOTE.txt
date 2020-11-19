@@ -200,6 +200,9 @@ https://github.com/Illumina/akt
 
 samtools depth *bamfile*  |  awk '{sum+=$3; sumsq+=$3*$3} END { print "Average = ",sum/NR; print "Stdev = ",sqrt(sumsq/NR - (sum/NR)**2)}'
 
+# xma 's shell
+cat *updated1* | grep -v gene1_cds | cut -f1-5|awk '{print ($4-$1)/($1+$4) "\t" $0'} |sort -k1,1n | tail -n146 | awk '{if ($1) print $1 "\t" $6}' | wc -l
+
 # Add header to a sam file
 samtools faidx <ref-fasta>
 samtools view -ht <fasta-index> <sam-file-no-header>
