@@ -204,6 +204,9 @@ samtools depth *bamfile*  |  awk '{sum+=$3; sumsq+=$3*$3} END { print "Average =
 cat *updated1* | grep -v gene1_cds | cut -f1-5|awk '{print ($4-$1)/($1+$4) "\t" $0'} |sort -k1,1n | tail -n146 | awk '{if ($1) print $1 "\t" $6}' | wc -l
 cut -f6 Colo829_1to1000_IndelQ5twistCap_1_S5_L001_indel.chr10.104852955.sam | grep -vP "^\d+M$" | wc -l
 
+cat *count.txt | grep gene1  | head -n1 > ../review_case41.txt
+cat *count.txt | grep -v gene1  | grep -v CBL  | grep -v ZCCHC7 >> ../review_case41.txt
+
 # Add header to a sam file
 samtools faidx <ref-fasta>
 samtools view -ht <fasta-index> <sam-file-no-header>
