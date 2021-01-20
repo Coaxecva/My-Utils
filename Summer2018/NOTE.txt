@@ -186,6 +186,37 @@ MINICONDA/bin/bwa index -p tmp/TAIR10_chr_all.fas gen_data/TAIR10_chr_all.fas
 ${BWA} ${BWA_OPT} ${IDX} ${FASTQ} | ${SAMTOOLS} view -Shu - | ${SAMTOOLS} sort -o ${BAM}
 ${SAMTOOLS} index ${BAM}
 
+---above^^---
+prefix=$1
+fastq1=$2
+fastq2=$3
+bwaindex="/research/.../GRCh37-lite.fa"
+bwa aln -t 4 ${bwaindex} ${fastq1} >${prefix}_1.sai 
+bwa aln -t 4 ${bwaindex} ${fastq2} >${prefix}_2.sai 
+bwa sampe ${bwaindex} ${prefix}_1.sai ${prefix}_2.sai ${fastq1} ${fastq2} >${prefix}.sam
+samtools view -b ${prefix}.sam -o ${prefix}.bam
+samtools sort ${prefix}.bam -o ${prefix}_sorted.bam
+mv ${prefix}_sorted.bam ${prefix}.bam
+samtools index ${prefix}.bam
+rm ${prefix}.sam ${prefix}_1.sai ${prefix}_2.sai
+#samtools flagstat ${prefix}_sorted.bam >${prefix}_sorted.bam.flagstat
+#java -jar /.../picard/picard-tools-1.45/SortSam.jar I=${prefix}.sam O=${prefix}_sorted.bam SO=coordinate CREATE_INDEX=true
+#rm ${prefix}_1.sai ${prefix}_2.sai
+------
+
+ls /research/.../*fastq.gz | fgrep -v -f finished  > fastq.lst
+cat fastq.lst | awk -F'/' '{print $NF}' | sed 's/_R/\t/' | cut -f1 | sort | uniq > exp.lst
+mapper=./<above^^>.sh
+while read line
+do
+  R1=`grep ${line}  fastq.lst | grep _R1`
+  R2=`grep ${line}  fastq.lst | grep _R2`
+  prefix=${line}
+  echo bsub -q large_mem  -M100000 -eo eo.${prefix}.txt -oo oo.${prefix}.txt sh ${mapper} ${prefix} ${R1} ${R2}
+  #echo sh ${mapper} ${prefix} ${R1} ${R2}
+done < exp.lst
+
+
 # Human genome on SC1
 /home/mohiyudm/bfx-red/projects/seqc2/references/hg38/reference.fasta
 # Find file names and direct path
